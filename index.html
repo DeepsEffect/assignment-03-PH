@@ -54,13 +54,13 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto lg:px-24">
+    <header class="container mx-auto px-4 lg:px-24">
         <!-- navbar ............................................. -->
         <nav class="lg:py-12">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div tabindex="0" role="button" class=" pr-3 lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -76,7 +76,7 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="text-4xl text-dark font-extrabold">Hockey<span class="text-color-primary">’</span>s</a>
+                    <a class="text-2xl lg:text-4xl text-dark font-extrabold">Hockey<span class="text-color-primary">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base text-color-gray font-normal">
@@ -91,13 +91,45 @@
                     <div class="pr-6 hidden lg:flex ">
                         <i class="fa-solid fa-magnifying-glass text-[#89898B]"></i>
                     </div>
-                    <a class="btn bg-color-primary outline-none text-white py-4 px-6">Get Ticket</a>
+                    <a class="btn bg-color-primary outline-none text-white lg:py-4 lg:px-6">Get Ticket</a>
                 </div>
             </div>
         </nav>
+        <!-- header banner............................................... -->
+        <section>
+            <div class="">
+                <div class="carousel w-full pt-6 ">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./Images/1.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="./Images/1.png" class="w-full" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- badge -->
+            <div>
+                <div class=" bg-color-dark w-full mt-4 lg:max-w-[566px] lg:max-h-[165px] rounded-2xl lg:translate-x-[740px] lg:-translate-y-[200px]">
+                    <div class="lg:max-w-[500px] p-4 lg:p-8 text-white space-y-2 lg:space-y-4">
+                        <h2 class=" text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                        <p class="text-[#FFFFFF99] text-base font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                            turpis placerat dolor. Purus
+                            urna in sit nullam proin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
-
+        
     </main>
     <footer>
 
