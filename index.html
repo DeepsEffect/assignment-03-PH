@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's</title>
-
+    <!-- inserting daisyUI and tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind -->
     <script>
         tailwind.config = {
             theme: {
@@ -15,6 +16,8 @@
                     colors: {
                         clifford: '#da373d',
                         'color-primary': '#FF4240',
+                        'color-dark': '#131318',
+                        'color-gray': '#424247',
                     }
                 }
             }
@@ -26,16 +29,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/c6a119c960.js" crossorigin="anonymous"></script>
+    <!-- custom styles -->
     <style>
         .font-manrope {
             font-family: 'Manrope';
+        }
+
+        .headings-primary {
+            color: #131318;
+            text-align: center;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .desc-primary {
+            color: #13131899;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 26px;
         }
     </style>
 </head>
 
 <body class="font-manrope">
     <header class="container mx-auto lg:px-24">
-        <nav>
+        <!-- navbar ............................................. -->
+        <nav class="lg:py-12">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -55,11 +76,11 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Hockey<span>'</span>s</a>
+                    <a class="text-4xl text-dark font-extrabold">Hockey<span class="text-color-primary">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                    <ul class="menu menu-horizontal px-1 text-base text-color-gray font-normal">
+                        <li class="text-color-primary font-bold"><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
@@ -67,8 +88,10 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <div class="pr-6 hidden lg:flex"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <a class="btn">Button</a>
+                    <div class="pr-6 hidden lg:flex ">
+                        <i class="fa-solid fa-magnifying-glass text-[#89898B]"></i>
+                    </div>
+                    <a class="btn bg-color-primary outline-none text-white py-4 px-6">Get Ticket</a>
                 </div>
             </div>
         </nav>
